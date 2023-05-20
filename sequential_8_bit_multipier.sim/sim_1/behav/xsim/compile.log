@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Pushbutton.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pushbutton
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Rising_Edge_Detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rising_Edge_Detector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Synchronizer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Asy
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clockDivider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_n
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/Pushbutton_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pushbutton_tb

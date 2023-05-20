@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat May 20 16:30:45 2023
+# Process ID: 12440
+# Current directory: C:/Users/youssef3453/sequential_8_bit_multipier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2932 C:\Users\youssef3453\sequential_8_bit_multipier\sequential_8_bit_multipier.xpr
+# Log file: C:/Users/youssef3453/sequential_8_bit_multipier/vivado.log
+# Journal file: C:/Users/youssef3453/sequential_8_bit_multipier\vivado.jou
+# Running On: CSE-P07-2165-09, OS: Windows, CPU Frequency: 3696 MHz, CPU Physical cores: 8, Host memory: 34020 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.xpr
+update_compile_order -fileset sources_1
+
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top scanner_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+source scanner_tb.tcl
+close_sim
+launch_simulation
+source scanner_tb.tcl
+close_sim
+launch_simulation
+source scanner_tb.tcl
+close_sim
+launch_simulation
+source scanner_tb.tcl
+close_sim
+launch_simulation
+source scanner_tb.tcl
+close_sim
+launch_simulation
+source scanner_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/BCD_tb.v w ]
+add_files -fileset sim_1 C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/BCD_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BCD [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BCD_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source BCD_tb.tcl
+close_sim
+launch_simulation
+source BCD_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Scanner [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top scanner_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source scanner_tb.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source scanner_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+source scanner_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source scanner_tb.tcl
+close_sim
+launch_simulation

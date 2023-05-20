@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../sequential_8_bit_multipier.srcs/sources_1/new/Pushbutton.v" \
+"../../../../sequential_8_bit_multipier.srcs/sources_1/new/Rising_Edge_Detector.v" \
+"../../../../sequential_8_bit_multipier.srcs/sources_1/new/Synchronizer.v" \
+"../../../../sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v" \
+"../../../../sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v" \
+"../../../../sequential_8_bit_multipier.srcs/sources_1/new/debouncer.v" \
+"../../../../sequential_8_bit_multipier.srcs/sim_1/new/Pushbutton_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

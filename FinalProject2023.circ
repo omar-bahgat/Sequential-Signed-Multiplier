@@ -55,7 +55,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1000.0"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(210,170)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Mutiplicand"/>
@@ -427,9 +427,6 @@
       <a name="radix" val="10unsigned"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(800,920)" name="Constant">
-      <a name="value" val="0x0"/>
-    </comp>
     <comp lib="0" loc="(90,980)" name="Constant"/>
     <comp lib="0" loc="(910,460)" name="Constant">
       <a name="value" val="0x0"/>
@@ -439,7 +436,7 @@
     <comp lib="1" loc="(270,860)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="2" loc="(880,990)" name="Multiplexer"/>
+    <comp lib="1" loc="(980,1020)" name="AND Gate"/>
     <comp lib="3" loc="(930,480)" name="Adder">
       <a name="width" val="16"/>
     </comp>
@@ -476,6 +473,7 @@
     <wire from="(10,750)" to="(30,750)"/>
     <wire from="(100,650)" to="(110,650)"/>
     <wire from="(100,720)" to="(100,750)"/>
+    <wire from="(1030,890)" to="(1030,1020)"/>
     <wire from="(1090,480)" to="(1090,860)"/>
     <wire from="(110,1020)" to="(130,1020)"/>
     <wire from="(110,620)" to="(110,650)"/>
@@ -553,28 +551,25 @@
     <wire from="(740,860)" to="(1090,860)"/>
     <wire from="(760,680)" to="(780,680)"/>
     <wire from="(760,750)" to="(760,890)"/>
-    <wire from="(760,890)" to="(900,890)"/>
+    <wire from="(760,890)" to="(1030,890)"/>
     <wire from="(770,610)" to="(780,610)"/>
     <wire from="(780,610)" to="(780,680)"/>
     <wire from="(780,680)" to="(820,680)"/>
-    <wire from="(800,920)" to="(860,920)"/>
     <wire from="(820,510)" to="(820,680)"/>
     <wire from="(820,510)" to="(880,510)"/>
     <wire from="(840,1000)" to="(840,1030)"/>
-    <wire from="(840,1000)" to="(850,1000)"/>
-    <wire from="(850,980)" to="(860,980)"/>
-    <wire from="(860,1010)" to="(860,1070)"/>
+    <wire from="(840,1000)" to="(930,1000)"/>
+    <wire from="(860,1040)" to="(860,1070)"/>
+    <wire from="(860,1040)" to="(930,1040)"/>
     <wire from="(860,560)" to="(860,740)"/>
-    <wire from="(860,920)" to="(860,980)"/>
     <wire from="(870,470)" to="(870,490)"/>
     <wire from="(870,470)" to="(890,470)"/>
     <wire from="(880,490)" to="(880,510)"/>
     <wire from="(880,490)" to="(890,490)"/>
-    <wire from="(880,990)" to="(900,990)"/>
     <wire from="(90,750)" to="(100,750)"/>
     <wire from="(90,980)" to="(130,980)"/>
-    <wire from="(900,890)" to="(900,990)"/>
     <wire from="(930,480)" to="(1090,480)"/>
+    <wire from="(980,1020)" to="(1030,1020)"/>
   </circuit>
   <circuit name="B8_bitRegister">
     <a name="appearance" val="logisim_evolution"/>

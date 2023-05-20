@@ -1,0 +1,22 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/BCD_tb.v,1684590677,verilog,,,,BCD_tb,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/Pushbutton_tb.v,1684601578,verilog,,,,Pushbutton_tb,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/Rising_Edge_Detector_tb.v,1684084915,verilog,,,,Rising_Edge_Detector_tb,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/multiplier_regs_loading_tb.v,1684132856,verilog,,,,multiplier_regs_loading_tb,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/scanner_tb.v,1684592747,verilog,,,,scanner_tb,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD.v,1684107548,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v,,BCD,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v,1684107775,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Pushbutton.v,,BCD_Stage;FA;mux;rca_4,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Pushbutton.v,1684585241,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Rising_Edge_Detector.v,,Pushbutton,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Rising_Edge_Detector.v,1684128466,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Synchronizer.v,,Rising_Edge_Detector,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Scanner.v,1684593061,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/SevSeg.v,,Scanner,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/SevSeg.v,1684109247,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Synchronizer.v,,SevenSegDecWithEn,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Synchronizer.v,1684130490,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v,,Asy,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/TFF.v,1684120592,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v,,TFF,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v,1684601479,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v,,clockDivider,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v,1684131879,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/debouncer.v,,counter_n,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/debouncer.v,1684130490,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/Pushbutton_tb.v,,debouncer,,,,,,,,
+C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/multiplier.v,1684590205,verilog,,C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sim_1/new/scanner_tb.v,,multiplier,,,,,,,,
