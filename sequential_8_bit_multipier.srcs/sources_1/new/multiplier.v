@@ -18,14 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-//module signed_mr (
- //   input [15:0] md,
- //  input [7:0] mr,
- //  input start,
- // output [15:0] product
-  //  );
-//endmodule
-//multiplier (.md(), .mr()., .start(), .product())
+
 
 
 module multiplier(
