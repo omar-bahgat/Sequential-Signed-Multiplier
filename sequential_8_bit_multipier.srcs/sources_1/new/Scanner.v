@@ -21,8 +21,8 @@
 module shift(
     input wire clk,
     input wire load,
-    input wire left,
-    input wire right,
+    input wire shift_left,
+    input wire shift_right,
     input wire [3:0] D0, D1, D2, D3, D4,
     output reg [19:0] allout
 );
@@ -37,11 +37,11 @@ begin
         allout[15:12] <= D3;
         allout[19:16] <= D4;
     end
-    else if(left)
+    else if(shift_left)
     begin
         allout[19:0] <={allout[17:0], allout[19:18]}; // rotate left by 4 bits
     end
-    else if(right)
+    else if(shift_right)
     begin
          allout[19:0] <= {allout[1:0], allout[19:2]}; // rotate right by 4 bits
     end
