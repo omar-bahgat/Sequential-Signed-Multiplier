@@ -45,15 +45,15 @@ module mux(input [3:0]a, input [3:0] b,input s,output [3:0]z);
   endmodule
 
 module BCD_Stage(input in3,in2,in1,in0,output out3,out2,out1,out0);
-wire [3:0] adderout;
+wire [3:0] adder_out;
 wire  addercarry;
-rca_4 add({in3,in2,in1,in0},4'b0011,0,adderout , addercarry );
+rca_4 add({in3,in2,in1,in0},4'b0011,0,adder_out , addercarry );
 //assign adderout ={,,,,in3,in2,in1,in0} +3;
-wire outgate1;
-wire outgate2;
-assign outgate1=in0 && in2;
-assign outgate2=in1 && in2;
-wire outgate3;
-assign outgate3= outgate1|| outgate2||in3;
-mux m1({in3,in2,in1,in0},adderout,outgate3,{out3,out2,out1,out0});
+wire gate1_out;
+wire gate2_out;
+assign gate1_out=in0 && in2;
+assign gate2_out=in1 && in2;
+wire gate3_out;
+assign gate3_out= gate1_out|| gate2_out||in3;
+mux m1({in3,in2,in1,in0},adder_out,gate3_out,{out3,out2,out1,out0});
 endmodule
