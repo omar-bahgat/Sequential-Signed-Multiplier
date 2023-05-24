@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/14/2023 08:41:47 PM
+// Create Date: 05/20/2023 05:34:29 PM
 // Design Name: 
-// Module Name: Pushbutton
+// Module Name: TwosComplemt_8
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,21 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-
-module Pushbutton(clk, in, out);
-input clk;
-reg rst;
-    initial begin 
-    rst = 1 ; 
-    #10 
-    rst = 0; 
-    end
-input in;
-output out;
-
-wire w,w2,clk2;
-clockDivider c(clk,rst,clk2);
-debouncer d(clk2, rst, in, w);
-Asy a(w,clk2,w2); 
-Rising_Edge_Detector r( clk, rs, w2, out);
+module TwosComplemt_8(input wire [7:0] in,output reg [7:0] out );
+always @(*) begin
+    if (in[7]) // Check if MSB is 1
+        out = ~in + 1'b1; // Two's complement: bitwise NOT + 1
+    else
+        out = in; // If MSB is not 1, output same number
+end
 endmodule

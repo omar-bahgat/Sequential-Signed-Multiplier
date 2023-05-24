@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/14/2023 08:41:47 PM
+// Create Date: 05/20/2023 03:46:49 PM
 // Design Name: 
-// Module Name: Pushbutton
+// Module Name: BCD_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,21 +20,24 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+module BCD_tb;
+reg [15:0] in;
+wire [3:0]D4,D3,D2,D1,D0;
 
-module Pushbutton(clk, in, out);
-input clk;
-reg rst;
-    initial begin 
-    rst = 1 ; 
-    #10 
-    rst = 0; 
-    end
-input in;
-output out;
+BCD dut (
+.in(in),
+.D4(D4),
+.D3(D3),
+.D2(D2),
+.D1(D1),
+.D0(D0));
 
-wire w,w2,clk2;
-clockDivider c(clk,rst,clk2);
-debouncer d(clk2, rst, in, w);
-Asy a(w,clk2,w2); 
-Rising_Edge_Detector r( clk, rs, w2, out);
+initial begin 
+    #10;
+    in = 6916;
+    #100;
+    in = 0;
+end
+
+
 endmodule

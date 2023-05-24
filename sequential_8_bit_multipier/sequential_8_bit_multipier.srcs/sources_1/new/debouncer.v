@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/14/2023 08:41:47 PM
+// Create Date: 05/14/2023 07:23:34 PM
 // Design Name: 
-// Module Name: Pushbutton
+// Module Name: debouncer
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,21 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-
-module Pushbutton(clk, in, out);
-input clk;
-reg rst;
-    initial begin 
-    rst = 1 ; 
-    #10 
-    rst = 0; 
-    end
-input in;
-output out;
-
-wire w,w2,clk2;
-clockDivider c(clk,rst,clk2);
-debouncer d(clk2, rst, in, w);
-Asy a(w,clk2,w2); 
-Rising_Edge_Detector r( clk, rs, w2, out);
+module debouncer(input clk, rst, in, output out);
+reg q1,q2,q3;
+always@(posedge clk, posedge rst) begin
+ if(rst == 1'b1) begin
+ q1 <= 0;
+ q2 <= 0;
+ q3 <= 0;
+ end
+ else begin
+ q1 <= in;
+ q2 <= q1;
+ q3 <= q2;
+ end
+end
+assign out = (rst) ? 0 : q1&q2&q3;
 endmodule

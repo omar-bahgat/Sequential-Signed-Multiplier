@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/14/2023 08:41:47 PM
+// Create Date: 05/14/2023 07:34:18 PM
 // Design Name: 
-// Module Name: Pushbutton
+// Module Name: clockDivider_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,21 +20,27 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-
-module Pushbutton(clk, in, out);
-input clk;
+module clockDivider_tb;
+parameter n = 500000;
+reg clk;
 reg rst;
-    initial begin 
-    rst = 1 ; 
-    #10 
-    rst = 0; 
-    end
-input in;
-output out;
+wire clk_out;
 
-wire w,w2,clk2;
-clockDivider c(clk,rst,clk2);
-debouncer d(clk2, rst, in, w);
-Asy a(w,clk2,w2); 
-Rising_Edge_Detector r( clk, rs, w2, out);
+clockDivider #(n) dut (
+    .clk(clk),
+    .rst(rst),
+    .clk_out(clk_out)
+  );
+initial begin 
+    clk = 0;
+    forever #5 clk = ~clk;
+end
+
+initial begin
+    rst = 1;
+    #10 rst = 0;
+    
+    #100000000000 rst = 1;
+    #10 $finish;
+end 
 endmodule

@@ -1,0 +1,322 @@
+
+*** Running vivado
+    with args -log Scanner.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Scanner.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source Scanner.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/utils_1/imports/synth_1/multiplier.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/utils_1/imports/synth_1/multiplier.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Scanner -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15928
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Scanner' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Scanner.v:51]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v:23]
+	Parameter n bound to: 250000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter_n' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v:23]
+	Parameter x bound to: 32 - type: integer 
+	Parameter n bound to: 250000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_n' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TwosComplemt_8' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/TwosComplemt_8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TwosComplemt_8' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/TwosComplemt_8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/multiplier.v:31]
+INFO: [Synth 8-6157] synthesizing module 'TFF' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/TFF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TFF' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/TFF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Pushbutton' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Pushbutton.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider__parameterized0' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter_n__parameterized0' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v:23]
+	Parameter x bound to: 32 - type: integer 
+	Parameter n bound to: 500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_n__parameterized0' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider__parameterized0' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/clockDivider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Asy' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Synchronizer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Asy' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Synchronizer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Rising_Edge_Detector' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Rising_Edge_Detector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Rising_Edge_Detector' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Rising_Edge_Detector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Pushbutton' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Pushbutton.v:24]
+WARNING: [Synth 8-6090] variable 'shifted_md' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/multiplier.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/multiplier.v:31]
+INFO: [Synth 8-6157] synthesizing module 'BCD' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'BCD_Stage' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v:47]
+INFO: [Synth 8-6157] synthesizing module 'rca_4' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v:30]
+INFO: [Synth 8-6157] synthesizing module 'FA' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FA' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'rca_4' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v:30]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'BCD_Stage' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD_Stage.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'BCD' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/BCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter_n__parameterized1' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v:23]
+	Parameter x bound to: 2 - type: integer 
+	Parameter n bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter_n__parameterized1' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/counter_n.v:23]
+INFO: [Synth 8-6157] synthesizing module 'shift' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Scanner.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'shift' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Scanner.v:21]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegDecWithEn' [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/SevSeg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/SevSeg.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegDecWithEn' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/SevSeg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Scanner' (0#1) [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Scanner.v:51]
+WARNING: [Synth 8-3848] Net rs in module/entity Pushbutton does not have driver. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/sources_1/new/Pushbutton.v:39]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1285.430 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rst'. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in'. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'in'. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out'. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out'. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/Pushbutton_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Scanner_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Scanner_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/scanner_constraints.xdc]
+Finished Parsing XDC File [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/scanner_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.srcs/constrs_1/new/scanner_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Scanner_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Scanner_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1353.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1353.379 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1353.379 ; gain = 67.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1353.379 ; gain = 67.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1353.379 ; gain = 67.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'CurrentState_reg' in module 'Rising_Edge_Detector'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                       A |                               00 |                               00
+                       B |                               01 |                               01
+                       C |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CurrentState_reg' using encoding 'sequential' in module 'Rising_Edge_Detector'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1353.379 ; gain = 67.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 140   
++---Registers : 
+	               32 Bit    Registers := 5     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    44|
+|3     |LUT1   |     7|
+|4     |LUT2   |    26|
+|5     |LUT3   |    29|
+|6     |LUT4   |    41|
+|7     |LUT5   |    92|
+|8     |LUT6   |    68|
+|9     |FDRE   |   260|
+|10    |IBUF   |    21|
+|11    |OBUF   |    27|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1395.945 ; gain = 110.516
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1395.945 ; gain = 42.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1395.945 ; gain = 110.516
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1395.945 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 44 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1395.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 25612207
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 9 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1395.945 ; gain = 110.516
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/youssef3453/sequential_8_bit_multipier/sequential_8_bit_multipier.runs/synth_1/Scanner.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Scanner_utilization_synth.rpt -pb Scanner_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 23 00:28:33 2023...

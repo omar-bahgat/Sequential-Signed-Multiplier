@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/14/2023 08:41:47 PM
+// Create Date: 05/14/2023 06:05:43 PM
 // Design Name: 
-// Module Name: Pushbutton
+// Module Name: Rising_Edge_Detector_tb
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,21 +20,27 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
+module Rising_Edge_Detector_tb;
+reg clock;
+reg reset; 
+reg w;
+wire z;
 
-module Pushbutton(clk, in, out);
-input clk;
-reg rst;
-    initial begin 
-    rst = 1 ; 
-    #10 
-    rst = 0; 
-    end
-input in;
-output out;
+Rising_Edge_Detector dut(.clock(clock), .reset(reset), .w(w), .z(z));
 
-wire w,w2,clk2;
-clockDivider c(clk,rst,clk2);
-debouncer d(clk2, rst, in, w);
-Asy a(w,clk2,w2); 
-Rising_Edge_Detector r( clk, rs, w2, out);
+  always #5 clock = ~clock;
+  
+  initial begin
+  clock = 0;
+  reset = 1;
+  w = 0;
+  #10 reset = 0;
+  #10 w = 1;
+  #10 w = 0;
+  #10 w = 1;
+  #10 w = 0;
+  #10 w = 0;
+  #10 w = 1;
+  #10 $finish;
+  end 
 endmodule

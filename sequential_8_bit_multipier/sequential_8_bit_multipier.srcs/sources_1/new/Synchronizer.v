@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/14/2023 08:41:47 PM
+// Create Date: 05/14/2023 08:37:47 PM
 // Design Name: 
-// Module Name: Pushbutton
+// Module Name: Synchronizer
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,21 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-
-module Pushbutton(clk, in, out);
-input clk;
-reg rst;
-    initial begin 
-    rst = 1 ; 
-    #10 
-    rst = 0; 
-    end
-input in;
-output out;
-
-wire w,w2,clk2;
-clockDivider c(clk,rst,clk2);
-debouncer d(clk2, rst, in, w);
-Asy a(w,clk2,w2); 
-Rising_Edge_Detector r( clk, rs, w2, out);
+module Asy(input seg,clk,output reg sigi);
+reg m;
+always @(posedge clk)
+begin
+    m<=seg;
+    sigi<=m;
+end
 endmodule
