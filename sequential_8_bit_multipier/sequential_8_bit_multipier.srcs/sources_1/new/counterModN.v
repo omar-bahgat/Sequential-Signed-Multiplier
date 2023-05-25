@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/14/2023 07:40:39 PM
 // Design Name: 
-// Module Name: counter_n
+// Module Name: counterModN
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
