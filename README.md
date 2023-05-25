@@ -16,9 +16,9 @@ product digits (right three 7-segement display digits).
 
 
 ## Repository Structure
-* <code>sources:</code> Contains all the Verilog source codes for the project.
-* <code>constraints:</code> contains the constraint files for the project.
-* <code>testbenches:</code> contains the testbenches used to verify our code.
+* <code>sources</code>: Contains all the Verilog source codes for the project.
+* <code>constraints</code>: Contains the constraint files for the project.
+* <code>testbenches</code>: Contains the testbenches used to verify our code.
 
 
 ## Group Members
