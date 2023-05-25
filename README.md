@@ -21,18 +21,18 @@ product digits (right three 7-segement display digits).
 * <code>testbenches</code>: Contains the testbenches used to verify our code.
 
 ## Source Files
-* <code>scanner</code>:
-* <code>bcd</code>:
-* <code>sevSeg</code>:
-* <code>twosComplement_8</code>:
-* <code>multiplier</code>:
-* <code>TFF</code>:
-* <code>pushButton</code>:
-* <code>counterModN</code>:
-* <code>clockDivider</code>:
-* <code>synchronizer</code>:
-* <code>debouncer</code>:
-* <code>risingEdgeDetector</code>:
+* <code>scanner</code>: Control unit responsible for delegating processes to other modules.
+* <code>bcd</code>: Responsible for converting binary numbers to BCD notation.
+* <code>sevSeg</code>: Responsible for displaying digits on the seven-segment display.
+* <code>twosComplement_8</code>: Responsible for converting a negative number to it's two's complement form.
+* <code>multiplier</code>: Responsible for multiplying two 8-bit numbers.
+* <code>TFF</code>: Responsible for toggling between the two parts of the shift and add algorithm.
+* <code>pushButton</code>: Responsible for detecting the push of a button.
+* <code>counterModN</code>: Responsible for counting to a certain value up to n-1.
+* <code>clockDivider</code>: Responsible for dividing the clock frequency to accomodate the different modules.
+* <code>synchronizer</code>: Responsible for synchronizing the input signal.
+* <code>debouncer</code>: Responsible for debouncing input signals from a push button.
+* <code>risingEdgeDetector</code>: Responsible for detecting the rising edge of an input signal.
 
 ## Group Members
 * Youssef Mansour: https://github.com/youssef3453 <br>
