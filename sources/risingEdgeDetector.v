@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/14/2023 06:04:36 PM
 // Design Name: 
-// Module Name: Rising_Edge_Detector
+// Module Name: risingEdgeDetector
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
