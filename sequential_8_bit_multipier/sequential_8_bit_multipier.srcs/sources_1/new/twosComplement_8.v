@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/20/2023 05:34:29 PM
 // Design Name: 
-// Module Name: TwosComplemt_8
+// Module Name: twosComplement_8
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
