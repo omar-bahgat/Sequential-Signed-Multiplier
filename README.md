@@ -20,6 +20,19 @@ product digits (right three 7-segement display digits).
 * <code>constraints</code>: Contains the constraint files for the project.
 * <code>testbenches</code>: Contains the testbenches used to verify our code.
 
+## Source Files
+* <code>scanner</code>:
+* <code>bcd</code>:
+* <code>sevSeg</code>:
+* <code>twosComplement_8</code>:
+* <code>multiplier</code>:
+* <code>TFF</code>:
+* <code>pushButton</code>:
+* <code>counterModN</code>:
+* <code>clockDivider</code>:
+* <code>synchronizer</code>:
+* <code>debouncer</code>:
+* <code>risingEdgeDetector</code>:
 
 ## Group Members
 * Youssef Mansour: https://github.com/youssef3453 <br>
