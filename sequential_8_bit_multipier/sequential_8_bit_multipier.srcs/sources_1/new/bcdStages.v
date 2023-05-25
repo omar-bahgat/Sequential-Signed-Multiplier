@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/15/2023 01:39:41 AM
 // Design Name: 
-// Module Name: BCD_Stage
+// Module Name: bcdStages
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
