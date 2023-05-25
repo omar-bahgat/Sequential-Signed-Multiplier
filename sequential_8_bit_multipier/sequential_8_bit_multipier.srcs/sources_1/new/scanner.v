@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/15/2023 01:38:04 AM
 // Design Name: 
-// Module Name: Scanner
+// Module Name: scanner
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
