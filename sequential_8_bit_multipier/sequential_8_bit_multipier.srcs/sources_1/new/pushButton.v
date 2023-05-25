@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/14/2023 08:41:47 PM
 // Design Name: 
-// Module Name: Pushbutton
+// Module Name: pushButton
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
