@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/14/2023 08:37:47 PM
 // Design Name: 
-// Module Name: Synchronizer
+// Module Name: synchronizer
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
