@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/15/2023 02:06:52 AM
 // Design Name: 
-// Module Name: SevSeg
+// Module Name: sevSeg
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
