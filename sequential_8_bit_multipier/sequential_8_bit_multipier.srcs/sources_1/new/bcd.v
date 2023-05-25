@@ -5,7 +5,7 @@
 // 
 // Create Date: 05/15/2023 01:38:54 AM
 // Design Name: 
-// Module Name: BCD
+// Module Name: bcd
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
