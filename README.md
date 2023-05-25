@@ -1,7 +1,7 @@
 # Sequential 8-bit Signed Multiplier (8x8)
 
 ## Overview
-This project was created for the Digital Design I course under the supervision on Dr. Mohamed Shalan. The objective of this project is to design a sequential 8-bit signed multiplier (8x8) using Vivado software and then implement it on the Basys 3 FPGA board. The project specifics are included in the project report here.
+This project was created for the Digital Design I course under the supervision of Dr. Mohamed Shalan. The objective of this project is to design a sequential 8-bit signed multiplier (8x8) using Vivado software and then implement it on the Basys 3 FPGA board. The project specifics are included in the project report here.
 
 ## Multiplier Features
 * Use the toggle switches to enter two 8-bit binary signed values:
@@ -16,18 +16,10 @@ product digits (right three 7-segement display digits).
 
 
 ## Repository Structure
-* <code>Sources:</code> Contains all the Verilog source codes for the project.
-* <code>Constraints:</code> Contains the constraint file for the project.
+* <code>sources:</code> Contains all the Verilog source codes for the project.
+* <code>constraints:</code> contains the constraint files for the project.
+* <code>testbenches:</code> contains the testbenches used to verify our code.
 
-## Source Files
-* <code>multiplier:</code>
-* <code>twosComplement_8:</code>
-* <code>twosComplement_16:</code>
-* <code>counterModN:</code> 
-* <code>clockDivider:</code> 
-* <code>synchronizer:</code> 
-* <code>debouncer:</code> 
-* <code>risingEdgeDetector:</code> 
 
 ## Group Members
 * Youssef Mansour: https://github.com/youssef3453 <br>
