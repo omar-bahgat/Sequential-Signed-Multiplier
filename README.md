@@ -19,6 +19,7 @@ product digits (right three 7-segement display digits).
 * <code>sources</code>: Contains all the Verilog source codes for the project.
 * <code>constraints</code>: Contains the constraint files for the project.
 * <code>testbenches</code>: Contains the testbenches used to verify our code.
+* <code>The Complete Project</code>: Contains all Vivado files.
 
 ## Source Files
 * <code>scanner</code>: Control unit responsible for delegating processes to other modules.
@@ -41,7 +42,4 @@ product digits (right three 7-segement display digits).
 * Omar Bahgat: https://github.com/omar-bahgat <br>
 
 
-
-## The below diagram gives an overview of the the circuit's structure <br>
-![image](https://user-images.githubusercontent.com/63240173/236754622-a032bf62-ec25-41a8-be99-44c1a76b86a0.png)
 
