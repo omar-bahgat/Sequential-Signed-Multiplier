@@ -1,9 +1,7 @@
 # Sequential 8-bit Signed Multiplier (8x8)
 
 ## Overview
-This project was created for the Digital Design I course under the supervision of Dr. Mohamed Shalan. The objective of this project is to design a sequential 8-bit signed multiplier (8x8) using Vivado software and then implement it on the Basys 3 FPGA board. The project specifics are included in the project report here [here](https://github.com/omar-bahgat/Sequential-Signed-Multiplier/assets/112024873/31fc0e72-7d15-43aa-864d-b9e7c89d269c).
-)
-
+This project was created for the Digital Design I course under the supervision of Dr. Mohamed Shalan. The objective of this project is to design a sequential 8-bit signed multiplier (8x8) using Vivado software and then implement it on the Basys 3 FPGA board. The project specifics are included in the project report here [here](https://github.com/omar-bahgat/Sequential-Signed-Multiplier/blob/main/Project%20Report.pdf).
 
 ## Multiplier Features
 * Use the toggle switches to enter two 8-bit binary signed values:
